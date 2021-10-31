@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgb(247, 247, 247);
+    font-size: 40px;
+    color: gray;
 }
 
 #container {
@@ -14,7 +17,42 @@
 }
 
 #BTN {
-    width: 250px;
-    height: 250px;
+    width: 160px;
+    height: 160px;
+    /* background: #f1f3f6; */
+    background: #ffff;
+    outline: none;
+    border: 1px rgba(255,255,255,0.5);
+    max-width: 200px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
     border-radius: 100%;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1),
+    -2px 2px 4px rgba(255,255,255,1),
+    inset -10px 0px 15px rgba(0,0,0,0.1),
+    inset 10px 0px 15px rgba(255,255,255,1);
+}
+
+#BTN:hover {
+    color: rgba(51,51,51,0.9);
+    box-shadow: -4px -4px 10px rgba(0,0,0,0),
+                2px -2px 4px rgba(255,255,255,0),
+                inset -10px 0px 15px rgba(0,0,0,0),
+                inset 10px 0px 15px rgba(255,255,255,0),
+                inset 2px 2px 4px rgba(0,0,0,0), 
+                inset -6px -6px 10px rgba(255,255,255,0);
+}
+
+#BTN:active {
+    color: rgba(51,51,51,0.7);
+    box-shadow: -4px -4px 10px rgba(0,0,0,0.1),
+                2px -2px 4px rgba(255,255,255,0.8),
+                inset -10px 0px 15px rgba(0,0,0,0),
+                inset 10px 0px 15px rgba(255,255,255,0),
+                inset 2px 2px 4px rgba(0,0,0,0.1), 
+                inset -6px -6px 10px rgba(255,255,255,1);
 }
